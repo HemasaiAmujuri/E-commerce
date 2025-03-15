@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Sign Up</title>
+    <link rel="stylesheet" href="./registerStyle.css" />
+  </head>
+  <body>
+    <div class="container roboto">
+      <div class="sign-up roboto">
+        <h1> Sign Up </h1>
+      </div>
+      <div class="account roboto">
+        <h3>Create Your Account</h3>
+        <h1>Sign Up</h1>
+      </div>
+      <div class="formDetails roboto">
+        <form>
+          <div class="nameInfo">
+            <label for="username"> Username </label>
+            <input
+              type="text"
+              placeholder="Enter Your Name"
+              required
+              id="username"
+            />
+          </div>
+
+          <div class="emailInfo">
+            <label for="email"> Email </label>
+            <input
+              type="email"
+              placeholder="Enter Your Email"
+              required
+              id="email"
+            />
+          </div>
+
+          <div class="passwordInfo">
+            <label for="password"> Password </label>
+            <input
+              type="password"
+              placeholder="Enter Your Password"
+              required
+              id="password"
+            />
+          </div>
+
+          <div class="mobileInfo">
+            <label for="mobile-number"> Mobile Number </label>
+            <input
+              type="Number"
+              placeholder="Enter Your Mobile Number"
+              required
+              id="mobile-number"
+            />
+          </div>
+
+          <div class="genderInfo">
+            <label> Gender </label>
+            <div class="genderOptions">
+              <input type="radio" name="gender" id="male" value="male" />
+              <label for="male"> male </label>
+              <input type="radio" name="gender" id="female" value="female" />
+              <label for="female"> female </label>
+            </div>
+          </div>
+
+          <div class="dateOfBirth">
+            <label for="dateOfBirth"> Date Of Birth </label>
+            <input
+              type="Date"
+              placeholder="Enter your Date of Birth"
+              required
+              id="dateOfBirth"
+            />
+          </div>
+
+           <button class="submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
