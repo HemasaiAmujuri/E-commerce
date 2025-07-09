@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="../css/login.css" />
+  </head>
+  <body>
+    <div class="left">
+      <img src="../images/login_page/login.jpg" alt="testing" width="100%" />
+      <h1>Shop Now at Unbeatable Prices - Unlock Exclusive Offers, Just a Login Away!"</h1>
+    </div>
+    <div class="app">
+      <form id = "form">
+        <div class="login">
+          <div class="Username">
+            <label for="Username"> Username</label>
+            <input type="text" placeholder="Enter your email" required = true id="Username" />
+          </div>
+
+          <div class="Password">
+            <label for="password"> Password</label>
+            <input
+              type="password"
+              placeholder="Enter your password"
+              required = true
+              id="password"
+            />
+          </div>
+
+          <input type="submit" value="Login" class="button"/>
+
+          <h5> Don't have an account?<a href="./signUp.html">Sign Up</a></h5>
+        </div>
+      </form>
+    </div>
+      <script>
+
+      function storeData() {
+        // e.preventDefault();
+        const email = document.getElementById("Username").value;
+        localStorage.setItem("email", email);
+
+        const password = document.getElementById("password").value;
+        localStorage.setItem("password", password)
+        alert("Login Successful");
+      }
+      document.getElementById("form")
+      .addEventListener("submit", storeData);
+
+      </script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+html, body {
+   margin : 0;
+   padding : 0;
+
+}
+
+ul {
+    display : flex;
+    flex-direction: row;
+    gap : 100px;
+    margin-left : 20%;
+    list-style-type: none;
+    font-size: 30px;
+}
+
+.sidebar {
+    background-color: orange;
+    height : 100vh;
+    width : 20%;
+    border: 2px solid black;
+}
+
+.nav {
+    background-color: orange;
+    width : 79.9%;
+    height : 30%;
+    float : right;
+}
+
+.topbar {
+    background-color: black;
+    width : 79.9%;
+    height : 30%;
+    float : right;
+}
+
+.sideNavUl {
+    display : flex;
+    flex-direction: column;
+    gap : 30px;
+    margin-left : 20%;
+    margin-top : 200px;;
+    list-style-type: none;
+    font-size: 30px;
+}
+
+

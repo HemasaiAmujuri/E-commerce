@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/signUp.css" />
+  </head>
+  <body>
+    <div class="app">
+      <form id="form">
+        <div class="signUp">
+          <div class="name">
+            <label for="nameInput"> Name </label><br />
+            <input
+              type="text"
+              placeholder="Enter your name"
+              id="nameInput"
+              required
+            />
+          </div>
+
+          <div class="email">
+            <label for="emailInput"> Email </label><br />
+            <input
+              type="text"
+              placeholder="Enter your name"
+              id="emailInput"
+              required
+            />
+          </div>
+
+          <div class="mobile">
+            <label for="mobileInput"> Mobile </label><br />
+            <input
+              type="number"
+              placeholder="Enter your name"
+              id="mobileInput"
+              required
+            />
+          </div>
+
+          <div class="date">
+            <label for="dateInput"> DOB </label><br />
+            <input
+              type="date"
+              placeholder="Enter your Date of Birth"
+              id="dateInput"
+            />
+          </div>
+
+          <div class="password">
+            <label for="passwordInput"> Password </label><br />
+            <input
+              type="password"
+              placeholder="Enter your name"
+              id="passwordInput"
+              required
+              value=""
+            />
+          </div>
+
+          <div class="address">
+            <label for="addressInput"> Address </label><br />
+            <textarea
+              rows="4"
+              cols="20"
+              placeholder="Enter your address"
+              id="addressInput"
+            ></textarea>
+          </div>
+
+          <button id="submit" onclick="storeData()" type="submit">
+            Submit
+          </button>
+          <h5>Already have an account?<a href="./login.html">Log In</a></h5>
+        </div>
+      </form>
+    </div>
+    <script>
+      function storeData(e) {
+        const name = document.getElementById("nameInput").value;
+        const email = document.getElementById("emailInput").value;
+        const mobile = document.getElementById("mobileInput").value;
+        const date = document.getElementById("dateInput").value;
+        const password = document.getElementById("passwordInput").value;
+        const address = document.getElementById("addressInput").value;
+
+        const userData = {
+          userName: name,
+          userEmail: email,
+          userMobile: mobile,
+          userDate: date,
+          userPassword: password,
+          userAddress: address,
+        };
+
+        console.log("user data:",userData);
+      //   console.log(userDataJSON);
+        const userDataJSON = JSON.stringify(userData);
+        localStorage.setItem("userData", userDataJSON);
+
+        alert("User Data saved to local storage");
+        let storedData=localStorage.getItem("userData");
+        const userObject = JSON.parse(storedData);
+        console.log("user object",userObject)
+        if(!storedData){
+         console.log('Data not saved');
+         alert("datanotsaved");
+         return;
+        }
+        console.log(storedData,'from local storage');
+      }
+    </script>
+  </body>
+</html>

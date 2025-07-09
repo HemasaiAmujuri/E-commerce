@@ -1,0 +1,82 @@
+body { 
+    margin : 0px;
+    padding : 0px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+
+h1 {
+    color : white;
+    text-align: center;
+    margin-top:0px;
+}
+
+
+.left {
+    width : 50%;
+    height: 100vh;
+    background-color:black;
+    float : left;
+}
+
+
+.app {
+    width :50%;
+    height : 100vh;
+    float : right;
+    background-color:orange;
+}
+
+
+.login {
+    background-color:white;
+    display : flex;
+    flex-direction: column;
+    width : 200px;
+    height : 300px;
+    margin : 200px 50px 150px 250px;
+    gap: 30px;
+    padding : 80px 20px 50px 20px;
+}
+
+input {
+    height : 35px;
+    width : 170px;
+    background-color: lightgray;
+    border-radius: 30px;
+    border : none;
+    padding-left:15px;
+}
+
+/* ::placeholder {
+  text-align: center;
+} */
+
+
+
+label {
+    font-weight: bold;
+    font-size:large; 
+}
+
+
+.button { 
+    height : 140px;
+    width : 100px;
+    margin-left: 50px;
+    margin-bottom:0px;
+}
+
+img {
+    padding: 50px;
+}
+
+h5 {
+    text-align: center;
+    font-size:small;
+}
+
+
+
+
