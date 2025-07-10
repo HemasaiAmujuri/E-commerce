@@ -30,7 +30,7 @@ ul {
 .topbar {
     background-color: black;
     width : 79.9%;
-    height : 30%;
+    height : 40px;
     float : right;
 }
 
@@ -42,6 +42,30 @@ ul {
     margin-top : 200px;;
     list-style-type: none;
     font-size: 30px;
+}
+
+
+img {
+    width : 79%;
+    float : right;
+    height : 400px;
+    margin: 15px 5px 10px 5px;
+
+}
+
+
+.promotion-images {
+    margin-top: 30px;
+    gap : 10px;
+    float : Right;
+    margin-left : 10px;
+}
+
+.promotion {
+    width : 350px;
+    display : inline;
+    border-radius: 8px;
+    height : 200px;
 }
 
 
