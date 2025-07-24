@@ -1,7 +1,6 @@
 html, body {
    margin : 0;
    padding : 0;
-
 }
 
 ul {
@@ -54,21 +53,37 @@ img {
 }
 
 
+.image-slider {
+    width : 79%;
+    float:right;
+    display : flex;
+    justify-content: center;
+    align-items:center;
+    margin: 15px 5px 10px 5px;
+}
+
+
 .promotion-images {
-    margin-top: 30px;
     gap : 10px;
     float : Right;
     justify-content: center;
     align-items: center;
+    margin-left:5px;
+    margin-right:5px;
 }
 
 .promotion {
-    width : 450px;
+    width : 400px;
     display : inline;
     border-radius: 8px;
     height : 210px;
-    margin-left : 20px;
-    margin-right: 10px;
+    margin-left : 15px;
+    margin-right: 15px;
+}
+
+
+.slider-Btn {
+   font-size: 50px;
 }
 
 
