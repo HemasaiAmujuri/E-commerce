@@ -1,31 +1,35 @@
 body { 
     margin : 0px;
     padding : 0px;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    overflow: auto;
 }
 
 
 h1 {
     color : white;
     text-align: center;
-    margin-top:0px;
+    padding : 20px;
 }
 
 
 .left {
-    width : 50%;
+    width : 60%;
     height: 100vh;
     background-color:black;
     float : left;
+    position: relative;
+    overflow: hidden;
 }
 
 
 .app {
-    width :50%;
-    height : 100vh;
+    width:40%;
+    height:100vh;
     float : right;
     background-color:orange;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 
@@ -33,39 +37,34 @@ h1 {
     background-color:white;
     display : flex;
     flex-direction: column;
-    width : 200px;
-    height : 300px;
-    margin : 200px 50px 150px 250px;
+    width : 270px;
+    height : 370px;
     gap: 30px;
-    padding : 80px 20px 50px 20px;
+    padding : 80px 20px 50px 30px;
 }
 
 input {
-    height : 35px;
-    width : 170px;
+    height : 40px;
+    width : 200px;
     background-color: lightgray;
     border-radius: 30px;
     border : none;
     padding-left:15px;
+    font-size: larger;
 }
-
-/* ::placeholder {
-  text-align: center;
-} */
 
 
 
 label {
     font-weight: bold;
-    font-size:large; 
+    font-size:25px; 
 }
 
 
 .button { 
-    height : 140px;
+    height : 100px;
     width : 100px;
-    margin-left: 50px;
-    margin-bottom:0px;
+    margin-left: 70px;
 }
 
 img {
@@ -74,8 +73,28 @@ img {
 
 h5 {
     text-align: center;
-    font-size:small;
+    font-size:larger;
 }
+
+
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  position: absolute;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
+
 
 
 
