@@ -5,37 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-commerce</title>
     <link rel="stylesheet" href="../css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
     <div class="left">
       <img src="../images/login_page/login.jpg" alt="testing" width="100%" />
-      <h1 class="marquee">Shop Now at Unbeatable Prices - Unlock Exclusive Offers, Just a Login Away!"</h1>
+      <h1 class="marquee">
+        Shop Now at Unbeatable Prices - Unlock Exclusive Offers, Just a Login
+        Away!"
+      </h1>
     </div>
     <div class="app">
-      <form id = "form">
+      <form id="form">
         <div class="login">
           <div class="Username">
-            <label for="Username"> Username</label>
-            <input type="text" placeholder="Enter your email" required = true id="Username" >
+            <label for="Username"> Email</label>
+            <input
+              type="text"
+              placeholder="Enter your email"
+              required="true"
+              id="Username"
+            />
           </div>
 
           <div class="Password">
             <label for="password"> Password</label>
+             <div class="password-wrapper">
             <input
               type="password"
               placeholder="Enter your password"
-              required = true
+              required="true"
               id="password"
-            >
+            />
+            <i class="fa-solid fa-eye" id="eye-icon"></i>
+            </div>
           </div>
 
-          <input type="submit" value="Login" class="button">
+          <input type="submit" value="Login" class="button" />
 
-          <h5> Don't have an account?<a href="./signUp.html">Sign Up</a></h5>
+          <h5>Don't have an account?<a href="./signUp.html">Sign Up</a></h5>
         </div>
       </form>
     </div>
-      <script src = "../js/login_script.js">
-      </script>
+    <script src="../js/login_script.js"></script>
   </body>
 </html>

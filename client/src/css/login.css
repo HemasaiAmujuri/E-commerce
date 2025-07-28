@@ -45,7 +45,7 @@ h1 {
 
 input {
     height : 40px;
-    width : 200px;
+    width : 90%;
     background-color: lightgray;
     border-radius: 30px;
     border : none;
@@ -92,6 +92,22 @@ h5 {
     transform: translateX(-100%);
   }
 }
+
+.password-wrapper {
+    position : relative;
+    display : flex;
+    align-items:center;
+}
+
+
+#eye-icon {
+    position : absolute;
+    right: 20px;    
+    top: 50%;     
+    transform: translateY(-50%); 
+    color:gray;
+}
+
 
 
 

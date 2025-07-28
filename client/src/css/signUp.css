@@ -72,5 +72,22 @@ input[type="date"] {
 }
 
 
+.password-wrapper {
+    position : relative;
+    display : flex;
+    align-items : center;
+}
+
+
+
+#eye-icon {
+    position : absolute;
+    top : 50%;
+    transform: translateY(-50%);
+    right : 70px;
+    color:gray;
+}
+
+
 
 
