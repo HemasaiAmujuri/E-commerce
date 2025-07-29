@@ -20,7 +20,7 @@ function storeData(e) {
   const userDataJSON = JSON.stringify(userData);
   localStorage.setItem("userData", userDataJSON);
 
-  alert("User Data saved to local storage");
+  // alert("User Data saved to local storage");
   let storedData = localStorage.getItem("userData");
   const userObject = JSON.parse(storedData);
   console.log("user object", userObject);
