@@ -1,4 +1,4 @@
-const images = ["../images/home_page/home_test.jpg", "../images/home_page/promotion_01.jpg", "../images/home_page/promotion_02.jpg", "../images/home_page/promotion_03.jpg"]
+const images = ["../images/home_page/promotion_01.jpg", "../images/home_page/promotion_02.jpg", "../images/home_page/promotion_03.jpg", "../images/home_page/promotion_04.jpg", "../images/home_page/promotion_05.jpg", "../images/home_page/promotion_06.jpg", "../images/home_page/promotion_07.jpg", "../images/home_page/promotion_08.jpg", "../images/home_page/promotion_09.jpg"]
 let currentIndex = 0;
 
 
