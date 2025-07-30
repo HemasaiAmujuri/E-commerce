@@ -95,34 +95,3 @@ h1 {
     align-items : center;
     padding:5px;
 }
-
-
-
-#second {
-    display: block;
-    text-align: center;
-}
-
-
-input {
-    background-color:white;
-    height : 40px;
-    margin:1px;
-    padding-left : 10px;
-    font-size:20px;
-    float : right;
-}
-
-
-.search-bar {
-    position : relative;
-}
-
-
-
-.search-bar i {
-    position : absolute;
-    padding : 15px;
-    right :5px;
-    color : gray; 
-}
