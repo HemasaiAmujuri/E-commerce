@@ -17,7 +17,6 @@ h1 {
     height: 100vh;
     background-color:black;
     float : left;
-    position: relative;
     overflow: hidden;
 }
 
@@ -80,7 +79,6 @@ h5 {
 .marquee {
   display: inline-block;
   white-space: nowrap;
-  position: absolute;
   animation: marquee 15s linear infinite;
 }
 
